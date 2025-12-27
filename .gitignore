@@ -1,0 +1,12 @@
+# Ambiente virtual
+venv/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Banco de dados gerado
+database.json
+
+# Sistema operacional
+.DS_Store
