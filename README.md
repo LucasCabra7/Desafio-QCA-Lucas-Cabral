@@ -52,26 +52,27 @@ A partir da base JSON gerada, o sistema retorna:
 
 ---
 
-## 🧱 Modularização do Projeto:
+## 🧱 Modularização do Projeto
 
-O arquivo `database.json` não é versionado. Ele é gerado automaticamente em tempo de execução do projeto, devido a solicitação do desafio.
+1. O arquivo `database.json` não é versionado. Ele é gerado automaticamente em tempo de execução do projeto, devido a solicitação do desafio.
+2. O arquivo `.gitkeep`, presente na pasta `data`, tem a única finalidade de permitir que o Git mantenha a pasta no repositório. Portanto, ao executar o projeto, esse arquivo pode ser removido e substituído pelos arquivos PDF necessários.
 
 ```text
 DESAFIO-QCA-LUCAS-CABRAL/
 │
 ├── data/
-│   └── *.pdf                  # Arquivos PDF de invoices
+│   └── .gitkeep               # Acrescente aqui os arquivos PDF de invoices
 │
 ├── src/
-│   ├── extrator.py             # Extração de dados dos PDFs
-│   ├── modelos.py              # Modelos Pydantic (Invoice e InvoiceItem)
-│   ├── database.py             # Gerenciamento e persistência dos dados
-│   └── analises.py             # Análises estatísticas com Pandas
+│   ├── extrator.py             
+│   ├── modelos.py              
+│   ├── database.py            
+│   └── analises.py             
 │
-├── main.py                     # Script principal de execução
-├── requirements.txt            # Dependências do projeto
-├── .gitignore                  # Arquivos ignorados pelo Git
-└── README.md                   # Documentação do projeto
+├── main.py                     
+├── requirements.txt            
+├── .gitignore                  
+└── README.md                   
 
 ```
 
@@ -140,7 +141,7 @@ Este projeto foi desenvolvido exclusivamente para fins de avaliação técnica, 
 
 ---
 
-## Agradecimentos
+## Participante
 
 <div align="center">
 
